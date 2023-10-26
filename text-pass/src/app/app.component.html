@@ -1,0 +1,18 @@
+<main class="d-flex flex-column min-vh-100 bg-warning">
+  <nav class="text-center m-3">
+    <h1>
+      Text passing app
+    </h1>
+  </nav>
+  <div class="container">
+    <div class="container d-flex justify-content-center border border-dark rounded m-5">
+      <app-box-one [heading]="componentOneHeading" (headingChangeOne)="onHeadingChangeOne($event)"></app-box-one>
+    </div>
+    <div class="container d-flex justify-content-center border border-dark rounded m-5">
+      <app-box-two [heading]="componentTwoHeading" (headingChangeTwo)="onHeadingChangeTwo($event)"></app-box-two>
+    </div>
+    <div class="container d-flex justify-content-center border border-dark rounded m-5">
+      <app-box-three [heading]="componentThreeHeading" (headingChangeThree)="onHeadingChangeThree($event)"></app-box-three> 
+    </div>
+  </div>
+</main>
